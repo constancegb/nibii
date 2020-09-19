@@ -1,0 +1,106 @@
+/* Supprime les marges sur tous le site */
+body {
+  margin:0;
+}
+
+.homepage-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+/* .background {
+  background-image: url(img/homepage1.jpg);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  z-index: 0;
+  position: relative;
+  width: 69vw;
+  height:auto;
+  min-height:100vh;
+} */
+
+.homepage-img {
+  width: auto;
+  height:100vh;
+  z-index: 0;
+}
+
+.black-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 11;
+  top: 0;
+  left: 0;
+}
+
+.sidebar {
+  width: -webkit-fill-available;
+  height: 100vh;
+  background-color: #2e2a2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #d8d5d5;
+  padding: 0 20px;
+  z-index: 22;
+}
+
+.nibii-container {
+  border-bottom: 3px solid #ffc00d;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nibii-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px;
+}
+
+.nibii-subtitle {
+  font-family: 'Amatic SC', sans-serif;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.in-construction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.in-construction__logo, .in-construction__text {
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+}
+
+.footer {
+  width: -webkit-fill-available;
+  border-top: 1px solid #d8d5d5;
+  margin-bottom: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  font-style: italic;
+}
